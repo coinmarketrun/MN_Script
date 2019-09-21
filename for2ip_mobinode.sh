@@ -4,7 +4,7 @@ TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='mobinode1.conf'
 CONFIGFOLDER='/root/.mobinode1'
 COIN_DAEMON='mobinoded1'
-COIN_CLI='mobinode-cli'
+COIN_CLI='mobinode1-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/MOBInodecoin/Mobinode/releases/download/v1.0.0.1/Mobinode-1.0.0.1-daemon_ubuntu_16.04.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
@@ -268,8 +268,8 @@ function important_information() {
  echo -e "${CYAN}Ensure Node is fully SYNCED with BLOCKCHAIN.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}Usage Commands.${NC}"
- echo -e "${GREEN}mobinode-cli masternode status${NC}"
- echo -e "${GREEN}mobinode-cli getinfo${NC}"
+ echo -e "${GREEN}mobinode1-cli masternode status${NC}"
+ echo -e "${GREEN}mobinode1-cli getinfo${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  
  }
