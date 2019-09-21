@@ -1,14 +1,14 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='mobinode.conf'
-CONFIGFOLDER='/root/.mobinode'
-COIN_DAEMON='mobinoded'
-COIN_CLI='mobinode-cli'
+CONFIG_FILE='mobinode1.conf'
+CONFIGFOLDER='/root/.mobinode1'
+COIN_DAEMON='mobinoded1'
+COIN_CLI='mobinode1-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ='https://github.com/MOBInodecoin/Mobinode/releases/download/v1.0.0.1/Mobinode-1.0.0.1-daemon_ubuntu_16.04.tar.gz'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='mobinode'
+COIN_NAME='mobinode1'
 COIN_PORT=12219
 RPC_PORT=12218
 
@@ -181,7 +181,7 @@ function get_ip() {
   if [ ${#NODE_IPS[@]} -gt 1 ]
     then
       echo -e "${GREEN}More than one IP. Please type 0 to use the first IP, 1 for the second and so on...${NC}"
-      INDEX=0
+      INDEX=1
       for ip in "${NODE_IPS[@]}"
       do
         echo ${INDEX} $ip
