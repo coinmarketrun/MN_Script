@@ -268,8 +268,8 @@ function important_information() {
  echo -e "${CYAN}Ensure Node is fully SYNCED with BLOCKCHAIN.${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  echo -e "${GREEN}Usage Commands.${NC}"
- echo -e "${GREEN}mobinode-cli masternode status${NC}"
- echo -e "${GREEN}mobinode-cli getinfo${NC}"
+ echo -e "${GREEN}mobinode1-cli masternode status${NC}"
+ echo -e "${GREEN}mobinode1-cli getinfo${NC}"
  echo -e "${BLUE}================================================================================================================================${NC}"
  
  }
